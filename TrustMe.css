@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disco GIF + Music Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            animation: discoBackground 1s infinite;
+        }
+        @keyframes discoBackground {
+            0% { background-color: red; }
+            25% { background-color: blue; }
+            50% { background-color: green; }
+            75% { background-color: yellow; }
+            100% { background-color: purple; }
+        }
+        .gif-container {
+            text-align: center;
+        }
+        audio {
+            display: none; /* Hide the audio player */
+        }
+    </style>
+</head>
+<body>
+    <!-- Your GIF -->
+    <div class="gif-container">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnJxaWZqbW9uZzRkeXdxZWFjeTA4ZHE5dzA0b2ZmbnJjbzVhN3dheCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zINs6k7lwfawSbLOIc/giphy.gif" alt="Cool GIF" width="500">
+    </div>
+
+    <!-- Your Song (autoplay, loop, and hidden) -->
+    <audio autoplay loop>
+        <source src="https://www.dropbox.com/scl/fi/vgs0kfd0bl928lals0rjm/mp3cut.net.mp3?rlkey=mdo66jegpms8pjs61jbtd2q7m&st=dpoowhzw&dl=1" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
